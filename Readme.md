@@ -42,3 +42,11 @@ Based on project whiteboards:
 - TypeScript types + Zod schemas shared between web/api
 
 ## Repo Layout
+fitness-app/
+apps/
+web/ # React frontend
+api/ # Express backend
+packages/
+shared/ # shared types/schemas
+docs/ # design + API + DB notes
+
