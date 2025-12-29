@@ -1,0 +1,16 @@
+services:
+  db:
+    image: postgres:16
+    container_name: fitness_app_db
+    restart: unless-stopped
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_USER: fitness
+      POSTGRES_PASSWORD: fitness
+      POSTGRES_DB: fitness_app
+    volumes:
+      - fitness_app_pgdata:/var/lib/postgresql/data
+
+volumes:
+  fitness_app_pgdata:
